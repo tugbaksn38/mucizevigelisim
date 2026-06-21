@@ -1,0 +1,170 @@
+/* components/GununMesajiCard.module.css */
+/* Kartların konteyneri */
+.gununMesajiKartlarContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Her bir kartın wrapper'ı */
+.gununMesajiKartWrapper {
+  height: 280px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+/* Kartın kendisi - 3D dönüş efekti için */
+.gununMesajiKarti {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Kart döndürüldüğünde */
+.kartDondurulmus {
+  transform: rotateY(180deg);
+}
+
+/* Kartın ön ve arka yüzü */
+.kartOnYuz, .kartArkaYuz {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Kartın ön yüzü */
+.kartOnYuz {
+  background: linear-gradient(135deg, #e2a5da, #72a1d1);
+  color: white;
+}
+
+.kartNumarasi {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.kartIkon {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.kartIkon::before {
+  content: "❝";
+  font-size: 30px;
+  color: white;
+}
+
+.kartYazi {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Kartın arka yüzü */
+.kartArkaYuz {
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  color: white;
+  transform: rotateY(180deg);
+  overflow-y: auto;
+}
+
+.mesajIcerik {
+  text-align: center;
+}
+
+.mesajMetin {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.ayetKaynak {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.ayetAciklama {
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .gununMesajiKartlarContainer {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .gununMesajiKartWrapper {
+    height: 250px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .gununMesajiKartlarContainer {
+    grid-template-columns: repeat(3, 1fr); /* 3 sütun */
+    gap: 10px;
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .gununMesajiKartWrapper {
+    height: 200px; /* Kart yüksekliği küçültüldü */
+  }
+
+  .kartNumarasi {
+    font-size: 24px;
+  }
+
+  .kartIkon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .kartIkon::before {
+    font-size: 22px;
+  }
+
+  .kartYazi {
+    font-size: 14px;
+  }
+
+  .mesajMetin,
+  .ayetKaynak,
+  .ayetAciklama {
+    font-size: 13px;
+  }
+}
+

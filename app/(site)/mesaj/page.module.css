@@ -1,0 +1,79 @@
+/* src/app/mesaj/page.module.css */
+
+.mesajSayfaContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #f5f7fa, #e4e8f0);
+}
+
+.mesajHeader {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background: linear-gradient(to right, #3498db, #2c3e50);
+  color: white;
+}
+
+.mesajHeader h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.mesajHeader p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.mesajMain {
+  flex: 1;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.gununMesajiKartlarContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.yukleniyor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+.mesajFooter {
+  text-align: center;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .mesajHeader h1 {
+    font-size: 2rem;
+  }
+  
+  .mesajHeader p {
+    font-size: 1rem;
+  }
+  
+  .mesajMain {
+    padding: 20px 0;
+  }
+  
+  .gununMesajiKartlarContainer {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 15px;
+  }
+}

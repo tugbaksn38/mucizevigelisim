@@ -1,0 +1,1070 @@
+[
+  {
+    "ad": "Alerji",
+    "ruhsalNedenler": "Kontrol kaybı korkusu, bastırılmış öfke veya stres.Kontrol kaybı korkusu, bastırılmış öfke veya stres.Kontrol kaybı korkusu, bastırılmış öfke veya stres."
+  },
+  {
+    "ad": "Baş ağrısı",
+    "ruhsalNedenler": "Gerginlik, yoğun stres, bastırılmış duygular."
+  },
+  {
+    "ad": "Depresyon",
+    "ruhsalNedenler": "Kendini değersiz hissetme, geçmiş travmalar, motivasyon eksikliği."
+  },
+  {
+    "ad": "Addison",
+    "ruhsalNedenler": "Kaybolma travması"
+  },
+  {
+    "ad": "Adet Düzensizliği",
+    "ruhsalNedenler": "Tiroid bezleri veya yumurtalıklarla ilgili çatışmalar"
+  },
+  {
+    "ad": "Ağız Kokusu",
+    "ruhsalNedenler": "Çok isteyip yiyememek, arzulamak"
+  },
+  {
+    "ad": "Ağız ve Gırtlak",
+    "ruhsalNedenler": "İfade edilemeyen sözler veya elde edilemeyen hedeflerle ilişkili. Sağ taraf: içeri almak (mecazi: edinilmek), sol taraf: dışarı atmak (mecazi: kurtulmak)."
+  },
+  {
+    "ad": "Ailevi Akdeniz Ateşi",
+    "ruhsalNedenler": "Değersizlik"
+  },
+  {
+    "ad": "Akciğer Kanseri",
+    "ruhsalNedenler": "Ölüm korkusu, nefessizlik travması, alana yapılan müdahale"
+  },
+  {
+    "ad": "Akciğer Zarı (Plevra)",
+    "ruhsalNedenler": "Göğse fiziksel saldırı tehdidi."
+  },
+  {
+    "ad": "Akne",
+    "ruhsalNedenler": "Sivilce ile aynı nedenler. Genellikle kimlik ve değersizlik çatışmaları."
+  },
+  {
+    "ad": "Alerjik Kaşıntı",
+    "ruhsalNedenler": "Ayrılık, bir yerden ayrılmak"
+  },
+  {
+    "ad": "Alerjik Rinit",
+    "ruhsalNedenler": "Koku travması"
+  },
+  {
+    "ad": "ALS",
+    "ruhsalNedenler": "Donup kalmak, kaçamamak, savaşamamak, kararsızlık"
+  },
+  {
+    "ad": "Alzheimer",
+    "ruhsalNedenler": "Birisini kaybetmek"
+  },
+  {
+    "ad": "Ankilozan Spondilit",
+    "ruhsalNedenler": "Değersizlik, suçluluk, başarısızlık"
+  },
+  {
+    "ad": "Anksiyete-Kaygı Bozukluğu",
+    "ruhsalNedenler": "Beklenmeyen, kontrol edilemeyen travma (deprem, boğulma, hastalık)"
+  },
+  {
+    "ad": "Anoreksiya",
+    "ruhsalNedenler": "Cinsel utanma veya kilo ile alay edilme"
+  },
+  {
+    "ad": "Aort Damarı Genişlemesi",
+    "ruhsalNedenler": "Entelektüel değersizlik veya alana müdahale"
+  },
+  {
+    "ad": "Astım",
+    "ruhsalNedenler": "Çok ciddi korku veya bölgesel müdahale korkusu"
+  },
+  {
+    "ad": "Avesküler Nevroz",
+    "ruhsalNedenler": "Yardım alamama"
+  },
+  {
+    "ad": "Ayak Altı",
+    "ruhsalNedenler": "Alanı terk etme isteği"
+  },
+  {
+    "ad": "Ayak Altında Yanma",
+    "ruhsalNedenler": "Aşırı öfke"
+  },
+  {
+    "ad": "Ayak Bileği",
+    "ruhsalNedenler": "Karşı koyamamak, kaçamamak"
+  },
+  {
+    "ad": "Ayak Üşümesi",
+    "ruhsalNedenler": "Stres dönemi, çözülememiş travma (dolaşım sorunu)"
+  },
+  {
+    "ad": "Ayaklar",
+    "ruhsalNedenler": "İleri gidememek"
+  },
+  {
+    "ad": "Ayakta Kemik Çıkıntısı",
+    "ruhsalNedenler": "İyi yürüyemediğini/hayatta ilerleyemediğini düşünme"
+  },
+  {
+    "ad": "Bacaklar -Kemik",
+    "ruhsalNedenler": "Zorluğa karşı ayakta duramamak"
+  },
+  {
+    "ad": "Bacaklar-Kas",
+    "ruhsalNedenler": "Kaçamadığını, tuzağa düştüğünü hissetmek"
+  },
+  {
+    "ad": "Bademcik",
+    "ruhsalNedenler": "Elde edememek, kurtulamamak"
+  },
+  {
+    "ad": "Bağırsak",
+    "ruhsalNedenler": "Sindirilmemiş büyük öfke"
+  },
+  {
+    "ad": "Bağırsak Kalın-Kolon",
+    "ruhsalNedenler": "Bir olayı, sözü hazmedememe, içine oturma"
+  },
+  {
+    "ad": "Bağırsak İnce-12parmak",
+    "ruhsalNedenler": "Sindirilemeyen besin, nesne, söz, öfke"
+  },
+  {
+    "ad": "Behçet Hastalığı",
+    "ruhsalNedenler": "Ayrılık acısı, birisini kaybetmek"
+  },
+  {
+    "ad": "Bel Fıtığı",
+    "ruhsalNedenler": "Yalnız kalma, destek görememe, değersizlik, suçluluk"
+  },
+  {
+    "ad": "Ben (Gözde)",
+    "ruhsalNedenler": "Görmek istemediğin saldırı"
+  },
+  {
+    "ad": "Benler",
+    "ruhsalNedenler": "Saldırı veya pislikle ilgili"
+  },
+  {
+    "ad": "Beyin Kanaması",
+    "ruhsalNedenler": "Her şey olabilir, genelde değersizlik"
+  },
+  {
+    "ad": "Beyin Tümörü",
+    "ruhsalNedenler": "Her şey olabilir"
+  },
+  {
+    "ad": "Bipolar",
+    "ruhsalNedenler": "Cinsel travma"
+  },
+  {
+    "ad": "Blumia",
+    "ruhsalNedenler": "Cinsel utanma, kilo ile alay, yanlış anlaşılma"
+  },
+  {
+    "ad": "Böbrek-Parankim",
+    "ruhsalNedenler": "Su veya sıvı ile ilgili tehdit"
+  },
+  {
+    "ad": "Böbrek - Toplama Tüpleri",
+    "ruhsalNedenler": "Terk edilme, dışlanma, unutulma"
+  },
+  {
+    "ad": "Böbrek Taşı",
+    "ruhsalNedenler": "Ayrılık acısı"
+  },
+  {
+    "ad": "Böbrek Yetersizliği",
+    "ruhsalNedenler": "Tek başına kalmak, ayrı hissetmek, sıvı travması"
+  },
+  {
+    "ad": "Böbreküstü Kabuğu",
+    "ruhsalNedenler": "Kaybolma travması, yanlış yöne hareket"
+  },
+  {
+    "ad": "Boğaz Şişliği",
+    "ruhsalNedenler": "Elde edemediği bir şey"
+  },
+  {
+    "ad": "Boğazda Yumru Hissi",
+    "ruhsalNedenler": "Boğulma tehlikesi"
+  },
+  {
+    "ad": "Boyun Düzleşmesi",
+    "ruhsalNedenler": "Adaletsizlik"
+  },
+  {
+    "ad": "Boyun Fıtığı",
+    "ruhsalNedenler": "Entelektüel değersizlik veya adaletsizlik"
+  },
+  {
+    "ad": "Bronşit",
+    "ruhsalNedenler": "Alana müdahale, öfke"
+  },
+  {
+    "ad": "Burun Tıkanıklığı",
+    "ruhsalNedenler": "Koku travması"
+  },
+  {
+    "ad": "Candida Mantarı",
+    "ruhsalNedenler": "Genellikle saldırı travması"
+  },
+  {
+    "ad": "Chron Hastalığı",
+    "ruhsalNedenler": "Çok ciddi hazmedilemeyen öfke"
+  },
+  {
+    "ad": "Cilt Lekesi",
+    "ruhsalNedenler": "Ayrılık travması"
+  },
+  {
+    "ad": "Çene Kanseri",
+    "ruhsalNedenler": "Bir şeyi ısıramamakla ilgili değersizlik"
+  },
+  {
+    "ad": "Çocuk Yapamama",
+    "ruhsalNedenler": "Baba, eş, çocuk kaybı, cinsel travma"
+  },
+  {
+    "ad": "Çok Yeme",
+    "ruhsalNedenler": "Duygusal açlık, öfke"
+  },
+  {
+    "ad": "Çölyak",
+    "ruhsalNedenler": "Sindirilemeyen besin, öfke ve suçluluk"
+  },
+  {
+    "ad": "Dalak",
+    "ruhsalNedenler": "Kan travması (kan görme, kanlı yaralanma)"
+  },
+  {
+    "ad": "Damarlar",
+    "ruhsalNedenler": "Küçük damarlar: çirkinlik, büyük damarlar: zorla tutulma"
+  },
+  {
+    "ad": "Demans",
+    "ruhsalNedenler": "Birisini kaybetmek"
+  },
+  {
+    "ad": "Demir Eksikliği",
+    "ruhsalNedenler": "Değersizlik, suçluluk, başarısızlık"
+  },
+  {
+    "ad": "Deri Hastalıkları Alt Deri",
+    "ruhsalNedenler": "Kişiliğe/kimliğe tehdit veya fiziksel saldırı"
+  },
+  {
+    "ad": "Deri Hastalıkları Üst Deri",
+    "ruhsalNedenler": "Terk edilme, ayrılma, kaybetme, dokunma kaybı"
+  },
+  {
+    "ad": "Dikkat Eksikliği",
+    "ruhsalNedenler": "Ölüm, kaybetme, ayrı kalma, özlem"
+  },
+  {
+    "ad": "Dilde Yara",
+    "ruhsalNedenler": "Elde edemediği bir şey, kurtulamamak"
+  },
+  {
+    "ad": "Dirsek Ağrısı",
+    "ruhsalNedenler": "Çaresizlik"
+  },
+  {
+    "ad": "Diş Eti Çekilmesi",
+    "ruhsalNedenler": "Fiziksel olarak bir şeyi yemek istemek"
+  },
+  {
+    "ad": "Diş Eti Problemi",
+    "ruhsalNedenler": "İstediği bir besini alamamak"
+  },
+  {
+    "ad": "Diş Gıcırdatmak - Diş Sıkmak",
+    "ruhsalNedenler": "Elde edememek"
+  },
+  {
+    "ad": "Diş Minesi",
+    "ruhsalNedenler": "Isırma veya ısıramama travması"
+  },
+  {
+    "ad": "Dişçi Korkusu",
+    "ruhsalNedenler": "Alana yapılan müdahale"
+  },
+  {
+    "ad": "Dişleksi",
+    "ruhsalNedenler": "Çok küçük yaştaki anneyle ayrılık travması"
+  },
+  {
+    "ad": "Diyabet (Şeker Hastalığı)",
+    "ruhsalNedenler": "Kadınlar: İğrenme, tiksinme (taciz, tecavüz, kan). Erkekler: Bir şeye zorlanma."
+  },
+  {
+    "ad": "Diz",
+    "ruhsalNedenler": "Esnek olamamak, performansını yeterli bulmama, ilerleyememe"
+  },
+  {
+    "ad": "Dizdeki Sıvı",
+    "ruhsalNedenler": "Performansla ilgili"
+  },
+  {
+    "ad": "Doğum Lekeleri",
+    "ruhsalNedenler": "Hamilelikte yaşanan ayrılık veya saldırı travması"
+  },
+  {
+    "ad": "Doğuştan Hastalıklar",
+    "ruhsalNedenler": "Annenin hamilelikte yaşadığı travmalar"
+  },
+  {
+    "ad": "Egzema",
+    "ruhsalNedenler": "Ayrılık travması. Vücut bölgesine göre kayıp şekli değişir."
+  },
+  {
+    "ad": "Eller ve Kollar - Kaslar",
+    "ruhsalNedenler": "Tutmayı, korumayı, itmeyi başaramamak"
+  },
+  {
+    "ad": "Eller ve Kollar - Kemikler",
+    "ruhsalNedenler": "Aciz kalmak, tutamamak, savunamamak"
+  },
+  {
+    "ad": "Ellerin Terlemesi",
+    "ruhsalNedenler": "Pislikle ilgili travma"
+  },
+  {
+    "ad": "Ellerin Titremesi",
+    "ruhsalNedenler": "Bir şeyi tutamamak, kullanamamak"
+  },
+  {
+    "ad": "Enfeksiyon- Boğaz",
+    "ruhsalNedenler": "Elde edememek"
+  },
+  {
+    "ad": "Enfeksiyon- Burun",
+    "ruhsalNedenler": "Koku Travması"
+  },
+  {
+    "ad": "Enfeksiyon- İdrar Yolları",
+    "ruhsalNedenler": "Alana müdahale, kimliğe öfke"
+  },
+  {
+    "ad": "Epilepsi",
+    "ruhsalNedenler": "Zorla hareketsiz bırakılmak, hareketin engellenmesi"
+  },
+  {
+    "ad": "Erken Ergenlik",
+    "ruhsalNedenler": "Kaybolma travması"
+  },
+  {
+    "ad": "Erken Kıllanma",
+    "ruhsalNedenler": "Kaybolma travması"
+  },
+  {
+    "ad": "Erken Menopoz",
+    "ruhsalNedenler": "Boşanma, ölüm, terk edilme, erkekle travma"
+  },
+  {
+    "ad": "Farenjit",
+    "ruhsalNedenler": "Yutmak zorunda kalmak ama çıkartmak istemek"
+  },
+  {
+    "ad": "Fibromiyalji",
+    "ruhsalNedenler": "Değersizlik, başarısızlık, suçluluk"
+  },
+  {
+    "ad": "Fistül",
+    "ruhsalNedenler": "Hazmedilemeyen öfke veya alana müdahale"
+  },
+  {
+    "ad": "Gastrit",
+    "ruhsalNedenler": "Alana yapılan müdahale (küçük durumlarda)"
+  },
+  {
+    "ad": "Geniz Akıntısı",
+    "ruhsalNedenler": "Alana saldırı, kurtulamama veya koku travması"
+  },
+  {
+    "ad": "Gırtlak",
+    "ruhsalNedenler": "Adaletsizlik"
+  },
+  {
+    "ad": "Gırtlak Kas",
+    "ruhsalNedenler": "Şok eden korku"
+  },
+  {
+    "ad": "Gırtlak Mukoza",
+    "ruhsalNedenler": "Konuşma kaybı korkusu"
+  },
+  {
+    "ad": "Glokom",
+    "ruhsalNedenler": "Arkadan gelen bir tehlikenin korkusu"
+  },
+  {
+    "ad": "Göğüs Kisti",
+    "ruhsalNedenler": "Sağ/sol tarafa göre baba/eş veya anne/çocuk ile ilgili kayıp"
+  },
+  {
+    "ad": "Görme Bozukluğu - Astigmat",
+    "ruhsalNedenler": "Gözden kaybetmek"
+  },
+  {
+    "ad": "Görme Bozukluğu - Hipermetrop",
+    "ruhsalNedenler": "Uzaktaki sorunu görememe, içedönük kişilik"
+  },
+  {
+    "ad": "Görme Bozukluğu - Miyop",
+    "ruhsalNedenler": "Yakındaki sorunu görememe, dışadönük kişilik"
+  },
+  {
+    "ad": "Göz Camsı Cisim",
+    "ruhsalNedenler": "Arkadan saldırı korkusu"
+  },
+  {
+    "ad": "Göz İris",
+    "ruhsalNedenler": "Işık parçalarını görememek, kaçamamak"
+  },
+  {
+    "ad": "Göz Kanlanması",
+    "ruhsalNedenler": "Görsel ayrılık"
+  },
+  {
+    "ad": "Göz Kapağı Düşüklüğü",
+    "ruhsalNedenler": "Bir şeye karşı şaşırma"
+  },
+  {
+    "ad": "Göz -Lensler (Katarakt)",
+    "ruhsalNedenler": "Görsel ayrılık"
+  },
+  {
+    "ad": "Göz Keratakonus",
+    "ruhsalNedenler": "Ayrılık, körlük korkusu"
+  },
+  {
+    "ad": "Göz Konjonktiva",
+    "ruhsalNedenler": "Güçlü görsel ayrılık"
+  },
+  {
+    "ad": "Göz Kornea- Keratit",
+    "ruhsalNedenler": "Görsel ayrılık"
+  },
+  {
+    "ad": "Göz Kristalin",
+    "ruhsalNedenler": "Arkadan saldırı korkusu"
+  },
+  {
+    "ad": "Göz Retina",
+    "ruhsalNedenler": "Çok yüksek bir korku"
+  },
+  {
+    "ad": "Göz Sarı Nokta",
+    "ruhsalNedenler": "Bir şeye çok şaşırma, şok olma"
+  },
+  {
+    "ad": "Göz Seyirmesi",
+    "ruhsalNedenler": "Arkadan yapılan büyük bir saldırı"
+  },
+  {
+    "ad": "Göz Tansiyonu",
+    "ruhsalNedenler": "Görsel ayrılık"
+  },
+  {
+    "ad": "Gözde Kaşıntı",
+    "ruhsalNedenler": "Görsel ayrılık veya rahatsız edici bir görüntü"
+  },
+  {
+    "ad": "Grip / Nezle",
+    "ruhsalNedenler": "Koku travması, eski travmaların tetiklenmesi"
+  },
+  {
+    "ad": "Guatr",
+    "ruhsalNedenler": "Kurtulamama, elde edememe, çaresizlik"
+  },
+  {
+    "ad": "Guatr Sert",
+    "ruhsalNedenler": "Elde edememe, elden çıkaramama, ifade edememe"
+  },
+  {
+    "ad": "Gül Hastalığı",
+    "ruhsalNedenler": "Ayrılık travması (üst deri)"
+  },
+  {
+    "ad": "Hafıza Kaybı",
+    "ruhsalNedenler": "Ayrılık acısı içinde beynin kendini koruması"
+  },
+  {
+    "ad": "Hapşırmak",
+    "ruhsalNedenler": "Koku travması"
+  },
+  {
+    "ad": "Hassas Bağırsak Sendromu",
+    "ruhsalNedenler": "Sindirilemeyen çok büyük öfke"
+  },
+  {
+    "ad": "Haşimato Tiroidi",
+    "ruhsalNedenler": "Kurtulamama, ayrılamama, elde edememe"
+  },
+  {
+    "ad": "Hemoroid",
+    "ruhsalNedenler": "Alana müdahale, öfke, hazmedememe, kimliksiz hissetme"
+  },
+  {
+    "ad": "Hepatit B-C",
+    "ruhsalNedenler": "Erkekte bölgesel saldırı, kadında kimliğe tehdit"
+  },
+  {
+    "ad": "Hıçkırık",
+    "ruhsalNedenler": "Ani korku"
+  },
+  {
+    "ad": "Hiperaktivite",
+    "ruhsalNedenler": "Zorla hareket ettirilmemek, kıstırılmak"
+  },
+  {
+    "ad": "Hipertansiyon",
+    "ruhsalNedenler": "Sıvı ile ilgili travma (boğulma, sel, para kaybı), korku, stres"
+  },
+  {
+    "ad": "Hipertiroidi",
+    "ruhsalNedenler": "Elde edememe, elden çıkaramama, ifade edememe (Stres dönemi)"
+  },
+  {
+    "ad": "Hipoglisemi",
+    "ruhsalNedenler": "Çok iğrenilen ve korkulan"
+  },
+  {
+    "ad": "Hipotiroidi",
+    "ruhsalNedenler": "Elde edememek, kurtulamamak (İyileşme/Kronik dönem)"
+  },
+  {
+    "ad": "Huzursuz Bacak",
+    "ruhsalNedenler": "Gitmek isteyip gidememek, alıkonulmak"
+  },
+  {
+    "ad": "İdrar Kaçırma",
+    "ruhsalNedenler": "Alana müdahale, hareketsizlik (doğum)"
+  },
+  {
+    "ad": "İdrarı Tutamama",
+    "ruhsalNedenler": "Alana müdahale, ait olunan yere saldırı"
+  },
+  {
+    "ad": "İdrar Yolları Enfeksiyonu",
+    "ruhsalNedenler": "Alana müdahale, kimliğe öfke"
+  },
+  {
+    "ad": "İltihaplı Romatizma",
+    "ruhsalNedenler": "Değersizlik"
+  },
+  {
+    "ad": "İnce Bağırsak",
+    "ruhsalNedenler": "Sindirilemeyen besin, nesne, söz, öfke"
+  },
+  {
+    "ad": "IBS",
+    "ruhsalNedenler": "Sindirilemeyen çok büyük öfke"
+  },
+  {
+    "ad": "İnfertilite",
+    "ruhsalNedenler": "Ölüm/kayıp veya kadının erkeğine güvenememesi"
+  },
+  {
+    "ad": "İshal",
+    "ruhsalNedenler": "Öfke ve İyileşme krizleri"
+  },
+  {
+    "ad": "İnsülin Direnci",
+    "ruhsalNedenler": "Kadında: iğrenme/korku, Erkekte: zorlanma"
+  },
+  {
+    "ad": "İstemsiz Hareketler",
+    "ruhsalNedenler": "Donakalmak"
+  },
+  {
+    "ad": "İşitme Kaybı",
+    "ruhsalNedenler": "Sol: duymak istemediğini duyma, Sağ: duymak istediğini duyamama"
+  },
+  {
+    "ad": "Kabızlık",
+    "ruhsalNedenler": "Sindirelemeyen öfke"
+  },
+  {
+    "ad": "Kadınlarda Tüylenme",
+    "ruhsalNedenler": "Kaybolma travması, yanlış yöne gitme"
+  },
+  {
+    "ad": "Kafa",
+    "ruhsalNedenler": "Entelektüel değersizlik"
+  },
+  {
+    "ad": "Kafatasında Kemik Büyümesi",
+    "ruhsalNedenler": "Entelektüel değersizlik"
+  },
+  {
+    "ad": "Kalça-Romatizma",
+    "ruhsalNedenler": "Cinsel değersizlik"
+  },
+  {
+    "ad": "Kalp Çarpıntısı",
+    "ruhsalNedenler": "Kalp krizi geçirme fobisi"
+  },
+  {
+    "ad": "Kalp Damarları- Arter",
+    "ruhsalNedenler": "Özdeğer kaybı"
+  },
+  {
+    "ad": "Kalp Kası",
+    "ruhsalNedenler": "Aşırı genel stres"
+  },
+  {
+    "ad": "Kalp Krizi",
+    "ruhsalNedenler": "Bölgesel tehdit, cinsel travma, iş kaybı. Stresin aniden kalkması (iyileşme krizi)."
+  },
+  {
+    "ad": "Kalp Ritim Bozukluğu",
+    "ruhsalNedenler": "Genel bir korku"
+  },
+  {
+    "ad": "Kalp Zarı (Perikart)",
+    "ruhsalNedenler": "Kalbe fiziksel saldırı tehdidi"
+  },
+  {
+    "ad": "Kan Damarları",
+    "ruhsalNedenler": "Özdeğer kaybı"
+  },
+  {
+    "ad": "Kansızlık",
+    "ruhsalNedenler": "Kan değersizlik travmaları"
+  },
+  {
+    "ad": "Karaciğer",
+    "ruhsalNedenler": "Açlık, parasızlık korkusu, varoluş tehdidi"
+  },
+  {
+    "ad": "Karaciğer Yağlanması",
+    "ruhsalNedenler": "Açlık travması"
+  },
+  {
+    "ad": "Kaslar",
+    "ruhsalNedenler": "Hareketle ilgili özdeğer kaybı"
+  },
+  {
+    "ad": "Karın Zarı (Periton)",
+    "ruhsalNedenler": "Göğse/karına fiziksel saldırı tehdidi"
+  },
+  {
+    "ad": "Kas Kaybı",
+    "ruhsalNedenler": "Değersizlik, başarısızlık, kaçamama, tutamama"
+  },
+  {
+    "ad": "Kasık Kemiği",
+    "ruhsalNedenler": "Cinsel değersizlik"
+  },
+  {
+    "ad": "Kaş Yolma",
+    "ruhsalNedenler": "Cinsel Travma"
+  },
+  {
+    "ad": "Kaşıntı",
+    "ruhsalNedenler": "Ayrılık, terk etme veya pislik travması"
+  },
+  {
+    "ad": "Kekemelik",
+    "ruhsalNedenler": "Ani korku, içte kalmış, ifade edilemeyen şey"
+  },
+  {
+    "ad": "Kellik",
+    "ruhsalNedenler": "Birisini kaybetmek, ayrılık"
+  },
+  {
+    "ad": "Kemik Erimesi",
+    "ruhsalNedenler": "Özdeğer kaybı, kendini yetersiz hissetme"
+  },
+  {
+    "ad": "Kemik Zarı (Periost)",
+    "ruhsalNedenler": "Şiddetli ayrılık ve fiziksel acının bir arada olduğu travmalar"
+  },
+  {
+    "ad": "Kemikler",
+    "ruhsalNedenler": "Özdeğer kaybı"
+  },
+  {
+    "ad": "Kıkırdak",
+    "ruhsalNedenler": "Özdeğer kaybı"
+  },
+  {
+    "ad": "Kıl Dönmesi",
+    "ruhsalNedenler": "Ayrılmak isteyip ayrılamamak, bırakmak isteyip bırakamamak"
+  },
+  {
+    "ad": "Kıllanma",
+    "ruhsalNedenler": "Kaybetme"
+  },
+  {
+    "ad": "Kısırlık",
+    "ruhsalNedenler": "Kayıp, ölüm, terk edilme"
+  },
+  {
+    "ad": "Kireçlenme",
+    "ruhsalNedenler": "Değersizlik, suçluluk, başarısızlık"
+  },
+  {
+    "ad": "Kirpik Yolma",
+    "ruhsalNedenler": "Cinsel Travma"
+  },
+  {
+    "ad": "KOAH",
+    "ruhsalNedenler": "Çok ciddi ölüm korkusu"
+  },
+  {
+    "ad": "Kollar ve Eller",
+    "ruhsalNedenler": "Tutamama, koruyamama, itememe"
+  },
+  {
+    "ad": "Kolon Kalın Bağırsak",
+    "ruhsalNedenler": "Hazmedememe, sindirememe, içine oturma"
+  },
+  {
+    "ad": "Kolon Kanseri",
+    "ruhsalNedenler": "Sindirilemeyen öfke, pislik/aşağılık hissi"
+  },
+  {
+    "ad": "Konversiyon",
+    "ruhsalNedenler": "Cinsel Travma"
+  },
+  {
+    "ad": "Kulak Ağrısı - Orta Kulak",
+    "ruhsalNedenler": "Önemli bilgiyi duyamama veya kurtulamama"
+  },
+  {
+    "ad": "Kulak",
+    "ruhsalNedenler": "İşitmeyle ilgili tehdit, duymak istememe"
+  },
+  {
+    "ad": "Kulak Altı Tükürük Bezleri",
+    "ruhsalNedenler": "İçeri almak ya da dışarı atmak"
+  },
+  {
+    "ad": "Kulak Çınlaması - Tinnitus",
+    "ruhsalNedenler": "Travmatik bir 'haber' alırken duyulan sesin travmayla ilişkilendirilmesi"
+  },
+  {
+    "ad": "Kulak Vestibüler Sistem",
+    "ruhsalNedenler": "Denge kaybı, düşme korkusu (Vertigo ile aynı)"
+  },
+  {
+    "ad": "Kulakta Mantar",
+    "ruhsalNedenler": "Duymak istemediği saldırı, pislik"
+  },
+  {
+    "ad": "Kurdeşen",
+    "ruhsalNedenler": "Birini kaybetmek"
+  },
+  {
+    "ad": "Kürtaj",
+    "ruhsalNedenler": "Suçluluk duygusu"
+  },
+  {
+    "ad": "Leğen Kemiği",
+    "ruhsalNedenler": "Cinsel değersizlik"
+  },
+  {
+    "ad": "Lenfler",
+    "ruhsalNedenler": "Özdeğer kaybı, başarısızlık, suçluluk, işe yaramazlık hissi"
+  },
+  {
+    "ad": "Lenfoma",
+    "ruhsalNedenler": "Ağır özdeğer kaybı, işe yaramazlık hissi"
+  },
+  {
+    "ad": "Lenf Ödem",
+    "ruhsalNedenler": "Çirkinlik, başarısızlık, suçluluk"
+  },
+  {
+    "ad": "Lösemi",
+    "ruhsalNedenler": "Değersizlik, suçluluk, başarısızlık"
+  },
+  {
+    "ad": "Lupus",
+    "ruhsalNedenler": "Ayrılık"
+  },
+  {
+    "ad": "Makat Çatlağı",
+    "ruhsalNedenler": "Alana müdahale"
+  },
+  {
+    "ad": "Manik Depresif",
+    "ruhsalNedenler": "Cinsel travma"
+  },
+  {
+    "ad": "Mantar (Tırnak)",
+    "ruhsalNedenler": "Pislik, psikolojik olarak pis görmek"
+  },
+  {
+    "ad": "Meme",
+    "ruhsalNedenler": "Eş, çocuk, yuva ile ilgili tehdit"
+  },
+  {
+    "ad": "Meme Kanseri Sağ",
+    "ruhsalNedenler": "%70 eşten ayrılma/aldatılma, %30 iş/baba sorunu"
+  },
+  {
+    "ad": "Meme Kanseri Sol",
+    "ruhsalNedenler": "Çocuk/anne ile ilgili kayıp ve sorunlar"
+  },
+  {
+    "ad": "Meme Kanseri Duktal",
+    "ruhsalNedenler": "Ayrılık korkusu, yakın kaybı"
+  },
+  {
+    "ad": "Menopoz (Erken)",
+    "ruhsalNedenler": "Kayıp/ölüm veya erkeklerle ilgili travmalar"
+  },
+  {
+    "ad": "Meniere",
+    "ruhsalNedenler": "Düşme, iflas (kendisi veya başkası)"
+  },
+  {
+    "ad": "Mesane-Mukoza",
+    "ruhsalNedenler": "Bölge alan işaretleme zorunluluğu"
+  },
+  {
+    "ad": "Mide",
+    "ruhsalNedenler": "Sindirememe, sindirilmemiş öfke, kabullenememe"
+  },
+  {
+    "ad": "Mide-Mukoza",
+    "ruhsalNedenler": "Bölgesel çatışma korkusu/öfkesi"
+  },
+  {
+    "ad": "Mide-12 Parmak Bağırsağı",
+    "ruhsalNedenler": "İş/akraba ile ilgili siniri hazmedememe"
+  },
+  {
+    "ad": "Mide-Yemek Borusu",
+    "ruhsalNedenler": "Tam elde etmişken elinden alınma"
+  },
+  {
+    "ad": "Mide Yemek Borusu Mukozası-Ülser",
+    "ruhsalNedenler": "Yutamama, hazmedememe"
+  },
+  {
+    "ad": "Migren",
+    "ruhsalNedenler": "İyileşme krizi (stresin bitmesiyle beyinde ödem)"
+  },
+  {
+    "ad": "Miyom Rahimde",
+    "ruhsalNedenler": "Cinsellik/doğurganlıkla ilgili sıkıntılar, erkeklerle travmalar"
+  },
+  {
+    "ad": "MS",
+    "ruhsalNedenler": "Donakalmak, kaçamamak, savaşamamak, kurtulamamak, karar verememek"
+  },
+  {
+    "ad": "MS Bacaklar",
+    "ruhsalNedenler": "Nereye gideyim kararsız kaldım"
+  },
+  {
+    "ad": "MS Eller",
+    "ruhsalNedenler": "Tutamama; tutamıyorum"
+  },
+  {
+    "ad": "MS Kol",
+    "ruhsalNedenler": "Kendini savunamama"
+  },
+  {
+    "ad": "MS Omuz Sırt",
+    "ruhsalNedenler": "Kaçamama, yoldan çekilememe"
+  },
+  {
+    "ad": "MS Yüz",
+    "ruhsalNedenler": "Utanma, rezil olma"
+  },
+  {
+    "ad": "Nefrotik Sendrom",
+    "ruhsalNedenler": "Yalnız bırakılma, terk edilme, sıvı travması"
+  },
+  {
+    "ad": "Nöropatik Ağrılar",
+    "ruhsalNedenler": "Ayrılık anında yaşanan fiziksel ağrı"
+  },
+  {
+    "ad": "OKB - Takıntılar",
+    "ruhsalNedenler": "Cinsel utanma travması"
+  },
+  {
+    "ad": "Omuz Ağrısı",
+    "ruhsalNedenler": "Destek görememe, yalnız bırakılma"
+  },
+  {
+    "ad": "Omuz ve Sırt - Kas",
+    "ruhsalNedenler": "Yeterince hızlı hamle yapamamak"
+  },
+  {
+    "ad": "Omuz ve Sırt - Kemik",
+    "ruhsalNedenler": "Aileye bakamamak, suçluluk"
+  },
+  {
+    "ad": "Otizm",
+    "ruhsalNedenler": "Aşırı korku, beynin kendini tamamen bırakması"
+  },
+  {
+    "ad": "Ödem",
+    "ruhsalNedenler": "Terk edilme. İyileşme dönemi rahatsızlığı."
+  },
+  {
+    "ad": "Öksürük - Kuru",
+    "ruhsalNedenler": "Bölge tehdidi, ayrılamama"
+  },
+  {
+    "ad": "Öksürük - Sürekli",
+    "ruhsalNedenler": "Erkekte: alana saldırı, Kadında: kimliğe saldırı"
+  },
+  {
+    "ad": "Panik Atak",
+    "ruhsalNedenler": "Nefessiz kalmak, boğulma korkusu"
+  },
+  {
+    "ad": "Pankreas",
+    "ruhsalNedenler": "Aileyle tartışma, maddi destek görememe, parasızlık korkusu, miras kavgaları"
+  },
+  {
+    "ad": "Pankreas Alfa Hücreleri",
+    "ruhsalNedenler": "Korku, tiksinti yaratan tehdit"
+  },
+  {
+    "ad": "Pankreas Beta Hücreleri",
+    "ruhsalNedenler": "Direnç gösterilmesi gereken tehdit, mücadele isteği"
+  },
+  {
+    "ad": "Pankreas Mukoza",
+    "ruhsalNedenler": "Bölgesel tehdite yönelik öfke, adaletsizlik"
+  },
+  {
+    "ad": "Pankreatit",
+    "ruhsalNedenler": "Parasal paylaşımla ilgili büyük öfke"
+  },
+  {
+    "ad": "Paranoya",
+    "ruhsalNedenler": "Cinsel travma"
+  },
+  {
+    "ad": "Paratiroit Bezleri",
+    "ruhsalNedenler": "Elde edememe ya da elden çıkaramama"
+  },
+  {
+    "ad": "Parkinson",
+    "ruhsalNedenler": "Karar verememek, hareket edememek. İşe yaramazlık hissi. Ana öfke: aile içi para kavgaları."
+  },
+  {
+    "ad": "Penis",
+    "ruhsalNedenler": "Üreme tehdidi"
+  },
+  {
+    "ad": "Polen Alerjisi",
+    "ruhsalNedenler": "Baharda yaşanan travmanın polenle ilişkilendirilmesi"
+  },
+  {
+    "ad": "Polikistik Over",
+    "ruhsalNedenler": "Birisini kaybetme, ölüm (sağ/sol farkı var)"
+  },
+  {
+    "ad": "Prolaktin Hormonunun Artışı",
+    "ruhsalNedenler": "Çocuğa veya çocuk gibi görülen birine bakamama"
+  },
+  {
+    "ad": "Prostat",
+    "ruhsalNedenler": "İktidar kaybı, cinsel değersizlik, erkek gibi hissedememe, özdeğer kaybı"
+  },
+  {
+    "ad": "Rahim",
+    "ruhsalNedenler": "Çirkinlik travması, ilişki sorunları, dişiliği kaybetme korkusu"
+  },
+  {
+    "ad": "Rahim Ağzı",
+    "ruhsalNedenler": "Cinsel travma, cinsel çirkinlik, terk edilme"
+  },
+  {
+    "ad": "Rahim Ağzı Kasları",
+    "ruhsalNedenler": "Cinsel özdeğer kaybı, hamile kalamama korkusu"
+  },
+  {
+    "ad": "Rahim Dölyatağı Borusu",
+    "ruhsalNedenler": "Cinsel travma, çirkinlik, iftiraya uğrama"
+  },
+  {
+    "ad": "Rahimde Miyom/Kist",
+    "ruhsalNedenler": "Özdeğer kaybı, hamile kalamama, cinsellik/annelikle ilgili travmalar"
+  },
+  {
+    "ad": "Rahimde Polip",
+    "ruhsalNedenler": "İlişki ile ilgili sorun"
+  },
+  {
+    "ad": "Rektum",
+    "ruhsalNedenler": "Aşağılık görülen bir konuyu hazmedememe"
+  },
+  {
+    "ad": "Rektum Mukoza",
+    "ruhsalNedenler": "Kadın kimliğine tehdit, kimliksiz hissetme"
+  },
+  {
+    "ad": "Reflü",
+    "ruhsalNedenler": "Çok ciddi öfke"
+  },
+  {
+    "ad": "Ritim Bozukluğu",
+    "ruhsalNedenler": "Çok yüksek stres"
+  },
+  {
+    "ad": "Romatizma",
+    "ruhsalNedenler": "Değersizlik, başarısızlık, suçluluk"
+  },
+  {
+    "ad": "Romatoid Artrit",
+    "ruhsalNedenler": "Değersizlik, başarısızlık, suçluluk"
+  },
+  {
+    "ad": "Saç Beyazlaması",
+    "ruhsalNedenler": "Aile büyüğü kaybı, ayrılık, dokunulmayı özlemek veya istememek"
+  },
+  {
+    "ad": "Saç Dökülmesi - Kellik",
+    "ruhsalNedenler": "Birisini kaybetmek, ayrılık (Bkz: Tiroit Bezler)"
+  },
+  {
+    "ad": "Saç Kepeği",
+    "ruhsalNedenler": "Ayrılık, büyük birisini kaybetmek"
+  },
+  {
+    "ad": "Saçta Egzema",
+    "ruhsalNedenler": "Başını okşayan, yaşça büyük birini (anne-baba) kaybetmek"
+  },
+  {
+    "ad": "Saç Koparma",
+    "ruhsalNedenler": "Cinsel travma"
+  },
+  {
+    "ad": "Saçkıran",
+    "ruhsalNedenler": "Ayrılık travması (üst deri)"
+  },
+  {
+    "ad": "Safra Kesesi",
+    "ruhsalNedenler": "Bölgesel tehdite yönelik öfke, rekabet, sınır ihlali"
+  },
+  {
+    "ad": "Safra Kesesi Taşı",
+    "ruhsalNedenler": "Erkekte: bölgesel saldırı, Kadında: korku"
+  },
+  {
+    "ad": "Sarılık",
+    "ruhsalNedenler": "Açlık travması"
+  },
+  {
+    "ad": "Sedef",
+    "ruhsalNedenler": "Ayrılık acısı, birisini kaybetmek"
+  },
+  {
+    "ad": "Sedef Romatizması",
+    "ruhsalNedenler": "Ayrılık, kayıp"
+  }
+]

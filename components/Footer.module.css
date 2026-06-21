@@ -1,0 +1,108 @@
+/*C:\Users\sifre\Desktop\megaproje\src\components\Footer.module.css*/
+
+.footer {
+  background: linear-gradient(135deg, #ffffff, #f2e9ff);
+  padding: 80px 40px 50px;
+  box-shadow: 0 -10px 30px rgba(0,0,0,0.1);
+}
+
+.footer-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.footer-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #2d1f4f;
+  margin-bottom: 20px;
+}
+
+.footer-col p {
+  color: #3b2c63;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* 🔗 Linkler – Header ile aynı animasyon */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  margin-bottom: 12px;
+}
+
+.footer-col a {
+  text-decoration: none;
+  color: #2d1f4f;
+  font-weight: 600;
+  position: relative;
+}
+
+.footer-col a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #7b4eff, #ff6ec7);
+  transition: width 0.3s ease;
+}
+
+.footer-col a:hover::after {
+  width: 100%;
+}
+
+/* 🌍 Dil Değiştirici */
+.lang-button {
+  margin-top: 20px;
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #7b4eff, #ff6ec7);
+  color: white;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.lang-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(123, 78, 255, 0.4);
+}
+
+/* 🌐 Sosyal ikonlar */
+.social-icons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 36px;
+  height: 36px;
+  transition: all 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.15) rotate(5deg);
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,0.25));
+}
+
+/* 📱 Mobil */
+@media (max-width: 900px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

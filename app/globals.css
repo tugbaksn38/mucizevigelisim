@@ -1,26 +1,754 @@
+/* globals.css */
+/* ==========================================================================
+   GLOBAL DEĞİŞKENLER VE TEMEL AYARLAR
+   ========================================================================== */
+
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
+  --header-height: 100px;
+  --background: #ffffff; /* tamamen beyaz */
+  --foreground: #171717; /* yazı rengi siyah */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
+/* dark modeda kullanılıyor
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #efe2e2;
+    --foreground: #efe2e2;
   }
 }
+  */
 
+/* ==========================================================================
+   TEMEL BODY ve HTML STİLLERİ
+   ========================================================================== */
+
+   body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Arial', 'Poppins', sans-serif;
+  padding-top: var(--header-height);
+}
+
+
+/*
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial', 'Poppins', 'Arial', sans-serif; /* Cool ve yaratıcı 
+  margin-top: 0;
+}
+*/
+
+
+
+/* ==========================================================================
+   LAYOUT - BODY ve İÇERİK DÜZENİ
+   ========================================================================== */
+
+/* Ana içerik kısmını esnek yap ve footer'ı en alta it */
+.body-s {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.icerik {
+  flex: 1; /* İçeriğin mevcut alanı doldurmasını sağlar ve footer'ı en alta iter */
+}
+
+
+/* ==========================================================================
+   ANA İÇERİK BÖLÜMÜ
+   ========================================================================== */
+
+.carousel-item img {
+  height: 400px; /* istediğin yükseklik */
+  width: 100%;
+  object-fit: contain; /* kırpmadan sığdırır */
+  background-color: #0f0000; /* resim küçükse kenarlara arka plan verir */
+  display: block;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body .btn {
+  margin-top: auto;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px; /* sabit yükseklik */
+  object-fit: cover; /* resimleri orantılı kırpar */
+}
+
+.italik-s {
+  font-style: italic;
+  font-size: 2.5em;
+  background: linear-gradient(45deg, #5e89da, #65d6ce);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 10px rgba(112, 175, 196, 0.5);
+}
+/* ==========================================================================
+   EĞİTİM SAYFASI STİLİ
+   ========================================================================== */
+
+/* Ana kapsayıcı */
+.egitim- {
+  background: linear-gradient(135deg, #fafafa, #fff); /* hafif geçişli arka plan */
+  padding: 40px 20px;
+  margin: 40px auto;
+  max-width: 1200px;
+  border-radius: 16px;
+}
+
+/* Grid düzeni */
+.egitim- .egitim-kutu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* Kart kutuları */
+.egitim-kutu {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border: 1px solid rgba(218, 165, 32, 0.3); /* gold tonu */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.egitim-kutu:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  border-color: gold;
+}
+
+/* Link */
+.egitim-link {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+
+/* Başlık */
+.egitim-baslik {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.egitim-baslik::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: gold;
+  margin-top: 6px;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.egitim-kutu:hover .egitim-baslik::after {
+  width: 70px;
+}
+
+/* Açıklama */
+.egitim-aciklama {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .egitim- {
+    padding: 20px;
+  }
+
+  .egitim-kutu {
+    padding: 18px;
+  }
+
+  .egitim-baslik {
+    font-size: 1.1rem;
+  }
+
+  .egitim-aciklama {
+    font-size: 0.9rem;
+  }
+}
+
+/* Grid düzeni */
+.egitim-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+
+/* ==========================================================================
+   BİYOENERJİ - RESİM BÖLÜMÜ
+   ========================================================================== */
+
+.biyoimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; /* Responsive kalması için */
+  height: auto;
+  width: 600px;
+  height: 420px;
+  margin-top: 20px;
+}
+
+.kutum {
+  display: inline-block;  /* alt satıra geçer */
+  max-width: 100%;
+  padding: 10px;
+  margin: 50px;
+  box-sizing: border-box; /* padding genişliğe dahil olsun */
+}
+
+/* ==========================================================================
+   BLOG DETAY BÖLÜMÜ
+   ========================================================================== */
+
+.detay1 {
+  background-color: rgb(237, 241, 241);
+  margin: 10px;
+}
+
+/* BLOG ANİMASYON MODELLERİ 
+=================================================== */
+/* BLOG ANİMASYON MODELLERİ 
+=================================================== */
+
+.card-client {
+  background: #2cb5a0;
+  width: 30rem;           /* genişlik aynı */
+  height: 28rem;           /* genişlik aynı */
+  padding: 20px 20px;     /* üst-alt 20px, sol-sağ 20px */
+  border: 4px solid #7cdacc;
+  box-shadow: 0 6px 12px rgba(207, 212, 222, 1);
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.card-client:hover {
+  transform: translateY(-12px);
+}
+
+/* Görsel kare/dikdörtgen yapmak için user-picture sınıfını güncelle */
+.user-picture {
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;        /* tüm div genişliğine göre */
+  height: 14rem;      /* yüksekliği artırıldı, kare/dikdörtgen görünüm */
+  border: none;       /* çerçeveyi kaldırdık */
+  border-radius: 8px; /* hafif köşeler */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 15px 0;
+}
+
+.user-picture svg {
+  width: 3rem;
+  fill: currentColor;
+}
+
+.name-client {
+  margin: 0;
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.name-client span {
+  display: block;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+
+.social-media:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
+  background: #7cdacc;
+}
+
+.social-media a {
+  position: relative;
+  margin-right: 15px;
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+.social-media a svg {
+  width: 1.1rem;
+  fill: currentColor;
+}
+
+/*-- Tooltip Social Media --*/
+.tooltip-social {
+  background: #262626;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -90%);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.tooltip-social:after {
+  content: " ";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+
+.social-media a .tooltip-social:after {
+  border-top-color: #262626;
+}
+
+.social-media a:hover .tooltip-social {
+  opacity: 1;
+  transform: translate(-50%, -130%);
+}
+
+
+/* ==========================================================================
+   HAKKIMDA SAYFASI ÖZELLİKLERİ
+   ========================================================================== */
+
+   /* Hakkımda Sayfası Stilleri */
+.hakkimda-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 1rem;
+   max-height: 2000px;
+}
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 2rem;
+  margin: 0 auto;        /* yatay ortalama */
+  text-align: center;     /* içeriği ortala */
+  border-radius: 0 0 20px 20px;
+  max-width: 1000px;
+  min-height: 250px;
+  height: auto;
+  overflow: hidden;
+}
+
+
+.hero-content h1 {
+  font-size: clamp(2rem, 5vw, 3rem); /* ekran küçüldükçe yazıyı de küçült */
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem); /* responsive yazı boyutu */
+  opacity: 0.9;
+}
+
+
+.about-content {
+  padding: 2rem 0;
+  margin-bottom: 4rem;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.profile-img {
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.02);
+}
+
+.about-text {
+  flex: 2;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.expertise-areas {
+  margin: 2rem 0;
+}
+
+.expertise-areas h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.expertise-areas ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.expertise-areas li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #555;
+}
+
+.expertise-areas li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mission-section {
+  background-color: #f8f9fa;
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  margin-bottom: 4rem;
+}
+
+.mission-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.mission-content {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mission-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  min-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-5px);
+}
+
+.mission-card h3 {
+  color: #667eea;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.mission-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .about-wrapper {
+    flex-direction: column;
+  }
+  
+  .about-image, .about-text {
+    flex: none;
+    width: 100%;
+  }
+  
+  .cta-buttons {
+    justify-content: center;
+  }
+  
+  .mission-content {
+    flex-direction: column;
+  }
+}
+
+/* ==========================================================================
+   global.css HEADER
+   ========================================================================== */
+
+   /* global.css dosyasının en altına ekleyin */font {
+  margin-top: var(--header-height, 150px);
+  transition: margin-top 0.4s ease;
+}
+
+/* src/app/globals.css */
+.footer-language-switcher {
+  margin: 15px 0;
+}
+
+.lang-button {
+  padding: 8px 16px;
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lang-button:hover {
+  background-color: #3a5a8a;
+}
+
+/* ARAPÇA DİL BUTONU */
+/* RTL (Arapça) desteği */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .header-container,
+[dir="rtl"] .footer-content {
+  direction: rtl;
+}
+
+[dir="rtl"] .desktop-menu ul {
+  direction: rtl;
+}
+
+[dir="rtl"] .mobile-menu {
+  right: -100%;
+  left: auto;
+}
+
+[dir="rtl"] .mobile-menu.active {
+  right: 0;
+  left: auto;
+}
+
+/* Arapça font desteği */
+[lang="ar"] body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/* ========================================================================== 
+   FOOTER BÖLÜMÜ
+   ==========================================================================
+*/
+
+.footer {
+  width: 100%;
+  background-image: url("/img/gradyan.png");
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px; /* Footer yüksekliği artırıldı */
+  color: black;
+  font-family: "Times New Roman", sans-serif;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive 3 kolon */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Hizmetler listesini grid ile iki sütun yapmak */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; /* merkeze al */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, max-content));
+  gap: 8px 25px; /* satır ve sütun boşluğu */
+}
+
+.footer-col ul li {
+  margin: 0; /* grid gap ile boşluk ayarlandı */
+}
+
+.footer-col ul li a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-col ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-logo {
+  margin-top: 15px;
+}
+
+.footer-logo img {
+  width: 120px;
+  height: auto;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Mobil uyumlu düzenleme */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr; /* tek kolon mobilde */
+    text-align: center;
+  }
+
+  .footer-col {
+    align-items: center;
+  }
+
+  .footer-col ul {
+    grid-template-columns: 1fr; /* mobilde tek sütun */
+    gap: 8px 0;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+
+/* ==========================================================================
+   RESPONSIVE TASARIM
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr; /* mobilde tek sütun */
+    text-align: center;
+  }
+
+  .footer-col {
+    align-items: center;
+  }
+  
+  /* Mobil için diğer responsive stiller buraya eklenebilir */
 }

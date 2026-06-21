@@ -1,0 +1,61 @@
+/* eski kodlar Header.module.css */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+
+  background: linear-gradient(135deg, #ffffff, #f2e9ff);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  z-index: 2000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #2d1f4f;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #2d1f4f;
+  position: relative;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #7b4eff, #ff6ec7);
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.langBtn {
+  padding: 8px 16px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #7b4eff, #ff6ec7);
+  color: white;
+  font-weight: 700;
+}
