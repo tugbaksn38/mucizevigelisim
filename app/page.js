@@ -63,9 +63,7 @@ export default function Anasayfa() {
               style={{ backgroundImage: `url(${slide.image})` }}
             >
               <div className={styles.heroOverlay}>
-                <div className={styles.heroContent}>
-                  <h1 className={styles.heroTitle}>{slide.title}</h1>
-                  <p className={styles.heroSubtitle}>{slide.subtitle}</p>
+                <div className={styles.heroContent} style={{ marginTop: "auto", marginBottom: "3rem" }}>
                   <div className={styles.heroButtons}>
                     <Link href="/hizmetler" className={styles.primaryBtn}>
                       Hizmetleri İncele
