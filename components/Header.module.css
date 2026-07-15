@@ -155,7 +155,7 @@
   box-shadow: -10px 0 35px rgba(45, 31, 79, 0.15);
   z-index: 1999;
   transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  padding: 80px 20px 30px 20px; /* Üst ve yan dolgular sıkılaştırıldı */
+  padding: 60px 15px 30px 15px; /* Üst ve yan dolgular ekstra sıkılaştırıldı */
   overflow-y: auto;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -167,16 +167,16 @@
 .mobileNav {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Boşluk 20px'den 10px'e düşürüldü */
+  gap: 5px; /* Dikey aralık 10px'den 5px'e düşürüldü */
 }
 
 .mobileNav a {
   text-decoration: none;
-  font-size: 1.05rem; /* Yazı boyutu hafif küçültüldü */
+  font-size: 0.95rem; /* Yazı boyutu 1.05rem'den 0.95rem'e düşürüldü */
   font-weight: 600;
   color: #2d1f4f;
-  padding: 8px 16px; /* İç dolgu 12px'den 8px'e düşürüldü */
-  border-radius: 12px;
+  padding: 6px 12px; /* Link dolgusu 8px-16px'den 6px-12px'e düşürüldü */
+  border-radius: 10px;
   transition: all 0.3s ease;
   background: transparent;
   border: 1px solid transparent;

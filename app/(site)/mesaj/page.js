@@ -68,7 +68,7 @@ export default function MesajPage() {
           </main>
 
           <footer className={styles.mesajFooter}>
-            <p>Her kartın arkasında hayatınıza ışık tutacak bir mesaj bulacaksınız</p>
+            <p>Her arkasında hayatınıza ışık tutacak bir mesaj bulacaksınız</p>
           </footer>
         </div>
       </ClientAutoTranslate>
