@@ -141,7 +141,7 @@
   }
 
   .gununMesajiKartWrapper {
-    height: 200px; /* Kart yüksekliği küçültüldü */
+    height: 260px; /* Kart yüksekliği mobil uyumlu yapıldı */
   }
 
   .kartNumarasi {
