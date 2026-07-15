@@ -58,10 +58,15 @@ export default function Anasayfa() {
           {slides.map((slide, index) => (
             <div
               key={slide.id}
-              className={`${styles.slide} ${index === currentSlide ? styles.slideActive : ""
-                }`}
+              className={`${styles.slide} ${index === currentSlide ? styles.slideActive : ""}`}
               style={{ backgroundImage: `url(${slide.image})` }}
             >
+              <img
+                src={slide.image}
+                alt={slide.title}
+                className={styles.slideImage}
+              />
+
               <div className={styles.heroOverlay}>
                 <div className={styles.heroContent} style={{ marginTop: "auto", marginBottom: "3rem" }}>
                   <div className={styles.heroButtons}>
