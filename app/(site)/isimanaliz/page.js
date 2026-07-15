@@ -588,6 +588,10 @@ export default function IsimAnaliz() {
         }
 
         @media (max-width: 768px) {
+          .form-row-container {
+            position: static !important;
+            margin-bottom: 16px;
+          }
           .form-row-container .form-group-horizontal {
             flex-direction: column;
             align-items: stretch;
