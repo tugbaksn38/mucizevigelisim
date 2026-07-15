@@ -8,8 +8,7 @@ import { gunlukDilDestekliMesajlariGetir } from '../../../data/GununMesaji';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import styles from './page.module.css';
-//--------------------------------------- dil için bu ikisi eklendi
-import LanguageSwitcher from "@/components/LanguageSwitcher";
+//--------------------------------------- dil için bu eklendi
 import { AutoTranslate, useLang } from "../../../data/lang-sistem";
 
 
