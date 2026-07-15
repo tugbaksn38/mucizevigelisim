@@ -1,7 +1,8 @@
 //src\app\isimanaliz\page.js
+//src\app\isimanaliz\page.js
 
 "use client";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { HARF_ACIKLAMALARI, HARF_SAYILARI } from "@/data/numeroloji/harfler";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -41,6 +42,12 @@ export default function IsimAnaliz() {
   const [formData, setFormData] = useState({ ad: "", soyad: "" });
   const [cinsiyet, setCinsiyet] = useState("kiz");
   const [sonuc, setSonuc] = useState(null);
+  const [araMetin, setAraMetin] = useState("");
+  const [filtrelenmisIsimler, setFiltrelenmisIsimler] = useState([]);
+  const oneriListRef = useRef(null);
+
+  // Klavye olayları için ref
+  const inputRef = useRef(null);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value.toUpperCase() });
@@ -94,9 +101,17 @@ export default function IsimAnaliz() {
 
     // Seçilen cinsiyete göre isim havuzunu belirle
     let isimHavuzu = [];
-    if (cinsiyet === "erkek") isimHavuzu = erkekIsimler;
-    else if (cinsiyet === "kiz") isimHavuzu = kizIsimler;
-    else isimHavuzu = unisexIsimler;
+    let cinsiyetAdi = "";
+    if (cinsiyet === "erkek") {
+      isimHavuzu = erkekIsimler;
+      cinsiyetAdi = "Erkek";
+    } else if (cinsiyet === "kiz") {
+      isimHavuzu = kizIsimler;
+      cinsiyetAdi = "Kız";
+    } else {
+      isimHavuzu = unisexIsimler;
+      cinsiyetAdi = "Unisex";
+    }
 
     const onerilenIsimler = [];
 
@@ -129,8 +144,46 @@ export default function IsimAnaliz() {
       onerilenIsimler.sort((a, b) => b.oran - a.oran);
     }
 
-    setSonuc({ harfDizisi, cakraDurum, eksikSayilar, onerilenIsimler });
+    setSonuc({ 
+      harfDizisi, 
+      cakraDurum, 
+      eksikSayilar, 
+      onerilenIsimler,
+      cinsiyetAdi,
+      toplamIsim: isimHavuzu.length 
+    });
+    setFiltrelenmisIsimler(onerilenIsimler);
+    setAraMetin("");
   };
+
+  // Arama fonksiyonu
+  const handleAra = (e) => {
+    const metin = e.target.value.toLowerCase();
+    setAraMetin(metin);
+    if (sonuc) {
+      const filtrelenmis = sonuc.onerilenIsimler.filter(item => 
+        item.isim.toLowerCase().includes(metin) || 
+        item.anlam.toLowerCase().includes(metin)
+      );
+      setFiltrelenmisIsimler(filtrelenmis);
+    }
+  };
+
+  // Klavye olayları
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+        e.preventDefault();
+        if (oneriListRef.current) {
+          const scrollAmount = e.key === "ArrowDown" ? 100 : -100;
+          oneriListRef.current.scrollBy({ top: scrollAmount, behavior: "smooth" });
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   return (
     <>
@@ -150,6 +203,7 @@ export default function IsimAnaliz() {
                 value={formData.ad}
                 onChange={handleChange}
                 className="border p-2 rounded-lg text-gray-800 w-full text-base"
+                ref={inputRef}
               />
             </div>
             <div className="form-field">
@@ -255,18 +309,48 @@ export default function IsimAnaliz() {
               {/* SAĞ TARAF: Anlamlı İsim Önerileri */}
               <div className="analysis-right">
                 <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-md h-full flex flex-col">
-                  <h2 className="text-xl font-extrabold mb-1 text-gray-800">Numerolojik İsim Önerileri</h2>
-                  <p className="text-sm text-gray-500 mb-4">
-                    Eksik olan çakra titreşimlerinizi dengelemek için önerilen isimler:
-                  </p>
+                  <div className="flex justify-between items-start mb-2">
+                    <div>
+                      <h2 className="text-xl font-extrabold text-gray-800">Numerolojik İsim Önerileri</h2>
+                      <p className="text-sm text-gray-500">
+                        {sonuc.cinsiyetAdi} isimleri arasından öneriler
+                      </p>
+                    </div>
+                    <div className="text-right">
+                      <span className="text-sm font-bold text-indigo-600">
+                        {sonuc.toplamIsim} {sonuc.cinsiyetAdi} ismi
+                      </span>
+                    </div>
+                  </div>
 
-                  <div className="flex-1 overflow-y-auto max-h-90 space-y-3 pr-2">
+                  {/* Arama Kutusu */}
+                  <div className="mb-3">
+                    <input
+                      type="text"
+                      placeholder="🔍 İsim veya anlamda ara..."
+                      value={araMetin}
+                      onChange={handleAra}
+                      className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    />
+                  </div>
+
+                  {/* İsim Sayısı Göstergesi */}
+                  <div className="text-xs text-gray-500 mb-2">
+                    {filtrelenmisIsimler.length} isim gösteriliyor
+                    {araMetin && ` (Aranan: "${araMetin}")`}
+                  </div>
+
+                  <div 
+                    ref={oneriListRef}
+                    className="flex-1 overflow-y-auto max-h-90 space-y-3 pr-2"
+                    style={{ maxHeight: '500px' }}
+                  >
                     {sonuc.eksikSayilar.length === 0 ? (
                       <p className="text-green-600 text-sm font-bold">Karmik eksik harfiniz olmadığı için öneriye gerek yoktur.</p>
-                    ) : sonuc.onerilenIsimler.length === 0 ? (
-                      <p className="text-gray-400 italic text-sm">Uygun öneri bulunamadı.</p>
+                    ) : filtrelenmisIsimler.length === 0 ? (
+                      <p className="text-gray-400 italic text-sm">Aramanıza uygun isim bulunamadı.</p>
                     ) : (
-                      sonuc.onerilenIsimler.map((item, idx) => {
+                      filtrelenmisIsimler.map((item, idx) => {
                         const tamKapatir = item.oran === 1;
                         return (
                           <div 
@@ -300,6 +384,11 @@ export default function IsimAnaliz() {
                         );
                       })
                     )}
+                  </div>
+
+                  {/* Klavye kullanım ipucu */}
+                  <div className="text-xs text-gray-400 mt-2 text-center border-t pt-2">
+                    ⬆⬇ Ok tuşlarıyla kaydırın
                   </div>
                 </div>
               </div>
@@ -468,34 +557,28 @@ export default function IsimAnaliz() {
         .excel-header-cell.is-eksik {
           border: 2px solid var(--cakra-color);
         }
-        .excel-header-cell.is-eksik.is-cakra-3 {
-          border: 5px double var(--cakra-color) !important;
-          padding: 5px 2px;
-        }
-        .excel-header-cell.is-eksik.is-cakra-7 {
-          border: 2px solid var(--cakra-color);
-          position: relative;
-          overflow: hidden;
-        }
-        .excel-header-cell.is-eksik.is-cakra-7::after {
-          content: "";
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          height: 4px;
-          background: repeating-linear-gradient(
-            45deg,
-            #a855f7,
-            #a855f7 4px,
-            #c084fc 4px,
-            #c084fc 8px
-          );
-        }
+
+        
         .excel-num {
           font-size: 24px;
           font-weight: 800;
           color: #333;
+        }
+
+        /* Scrollbar Styling */
+        .overflow-y-auto::-webkit-scrollbar {
+          width: 6px;
+        }
+        .overflow-y-auto::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 10px;
+        }
+        .overflow-y-auto::-webkit-scrollbar-thumb {
+          background: #c4b5fd;
+          border-radius: 10px;
+        }
+        .overflow-y-auto::-webkit-scrollbar-thumb:hover {
+          background: #8b5cf6;
         }
 
         @media (max-width: 1024px) {

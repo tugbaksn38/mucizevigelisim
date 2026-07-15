@@ -27,6 +27,7 @@ export default function Header() {
           <Link href="/numeroloji">Numeroloji</Link>
           <Link href="/isimanaliz">İsim Analizi</Link>
           <Link href="/hastalik">Hastalıklar</Link>
+          <Link href="/webinar/login">Webinar</Link>
           <Link href="/mesaj">Günün Ayeti</Link>
           <Link href="/hakkimda">Hakkımda</Link>
           <Link href="/iletisim">İletişim</Link>

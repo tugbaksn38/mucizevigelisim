@@ -1,120 +1,137 @@
 // src/app/hizmetler/page.js
 "use client";
+
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { AutoTranslate } from "../../../data/lang-sistem";
+import { AutoTranslate } from "@/data/lang-sistem";
+import { getHizmetler } from "@/data/hizmet";
 import "./hizmetler.css";
 
-
-// ======================= BİLEŞEN TANIMI ============================
 export default function Hizmetler() {
-
-  // ======================= DURUM YÖNETİMİ ==========================
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
-  // ======================= VERİ ÇEKME İŞLEMİ =======================
+  // ⚡ Client-side montaj sonrası verileri LocalStorage'dan yükle
   useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await fetch("/api/shopier", { cache: "no-store" });
-        if (!response.ok)
-          throw new Error(`HTTP error! status: ${response.status}`);
-        const data = await response.json();
-        setProducts(data.products || []);
-      } catch (err) {
-        setError(err.message || "Ürünler yüklenirken bir hata oluştu");
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchProducts();
+    const list = getHizmetler();
+    // Sadece vitrinde gösterilmesi işaretlenmiş ürünleri listele
+    const showcaseList = (list || []).filter(product => product.showcase !== false);
+    setProducts(showcaseList);
+    setLoading(false);
   }, []);
-
 
   // ======================= YÜKLENİYOR DURUMU =======================
   if (loading) {
     return (
-      <div className="loading-container">
-        <p>Ürünler yükleniyor...</p>
-      </div>
+      <>
+        <Header />
+        <div className="loading-container">
+          <div className="loader"></div>
+          <p>Hizmetlerimiz yükleniyor...</p>
+        </div>
+        <Footer />
+      </>
     );
   }
-  // ======================= HATA DURUMU =============================
-  if (error) {
-    return (
-      <div className="error-container">
-        {" "}
-        <h2>Hata</h2> <p>{error}</p>{" "}
-        <button onClick={() => window.location.reload()}>Tekrar Dene</button>{" "}
-      </div>
-    );
-  }
-
 
   // ======================= ANA GÖRÜNÜM =============================
   return (
     <>
-      {" "}
-      <Header />{" "}
+      <Header />
       <AutoTranslate>
         <div className="hizmetler-container">
-          {" "}
           <h1 className="section-title">
-            {" "}
-            <span className="bb8-icon">⚙️</span> Mağazamızdaki Hizmetler{" "}
-          </h1>{" "}
+            <span className="bb8-icon">⚙️</span> Mağazamızdaki Hizmetler
+          </h1>
+
           <div className="products-grid">
-            {" "}
-            {products.map((product) => (
-              <div key={product.id} className="product-card">
-                {" "}
-                <div className="product-image">
-                  {" "}
-                  <Image
-                    src={
-                      product.media?.[0]?.url?.startsWith("http")
-                        ? product.media[0].url
-                        : "/placeholder-product.jpg"
-                    }
-                    alt={product.title || "Ürün resmi"}
-                    fill
-                    className="image-cover"
-                  />{" "}
-                </div>{" "}
-                <div className="product-info">
-                  {" "}
-                  <h3>{product.title}</h3>{" "}
-                  <div
-                    className="product-description"
-                    dangerouslySetInnerHTML={{ __html: product.description }}
-                  ></div>{" "}
-                  <div className="product-price">
-                    {product.priceData?.discountedPrice || product.priceData?.price || "Fiyat bilgisi yok"} TL
+            {products.map((product) => {
+              // İndirim Oranı Hesaplama
+              const p = parseFloat(product.price);
+              const dp = parseFloat(product.discountedPrice);
+              const showDiscount = dp && p && dp < p;
+              const discountPercentage = showDiscount ? Math.round(((p - dp) / p) * 100) : 0;
+
+              // Stok Durumu Kontrolü
+              const stock = product.stock !== undefined && product.stock !== null ? parseInt(product.stock, 10) : null;
+              const isOutOfStock = stock === 0;
+              const showStockBadge = stock !== null && stock > 0 && stock <= 3;
+
+              return (
+                <div key={product.id} className={`product-card ${isOutOfStock ? "out-of-stock" : ""}`}>
+                  <div className="product-image">
+                    {showDiscount && (
+                      <div className="discount-badge">%{discountPercentage} İNDİRİM</div>
+                    )}
+                    {showStockBadge && (
+                      <div className="stock-badge warning">Son {stock} Ürün</div>
+                    )}
+                    {isOutOfStock && (
+                      <div className="stock-badge danger">Tükendi</div>
+                    )}
+                    <Image
+                      src={
+                        product.media?.[0]?.url || "/placeholder-product.jpg"
+                      }
+                      alt={product.title || "Ürün resmi"}
+                      fill
+                      className="image-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
                   </div>
-                  {" "}
-                  <a
-                    href={
-                      product.url ||
-                      `https://www.shopier.com/Product?productId=${product.id}`
-                    }
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="buy-button"
-                  >
-                    {" "}
-                    Satın Al{" "}
-                  </a>{" "}
-                </div>{" "}
+
+                  <div className="product-info">
+                    <h3>{product.title}</h3>
+
+                    <div
+                      className="product-description"
+                      dangerouslySetInnerHTML={{ __html: product.description }}
+                    />
+
+                    <div className="price-container">
+                      {showDiscount ? (
+                        <>
+                          <span className="original-price">{product.price} TL</span>
+                          <span className="discounted-price">{product.discountedPrice} TL</span>
+                        </>
+                      ) : (
+                        <span className="normal-price">{product.price} TL</span>
+                      )}
+                    </div>
+
+                    {isOutOfStock ? (
+                      <button className="buy-button disabled" disabled>
+                        Tükendi
+                      </button>
+                    ) : (
+                      <a
+                        href={product.url || "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-button"
+                      >
+                        Satın Al
+                      </a>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+
+            {products.length === 0 && (
+              <div className="no-products">
+                <p>📦 Henüz eklenmiş bir hizmet bulunmamuyor.</p>
+                <p style={{ fontSize: '14px', color: '#999', marginTop: '10px' }}>
+                  Lütfen daha sonra tekrar kontrol edin.
+                </p>
               </div>
-            ))}{" "}
-          </div>{" "}
-        </div>{" "}
+            )}
+          </div>
+        </div>
       </AutoTranslate>
-      <Footer />{" "}
+      <Footer />
     </>
   );
 }

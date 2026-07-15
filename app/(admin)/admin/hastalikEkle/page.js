@@ -24,6 +24,7 @@ export default function HastalikEkle() {
     { name: "MEGA CODES", href: "/admin/teknik", icon: "🌟" },
     { name: "Jean Adrinne", href: "/admin/jeanadrienne", icon: "🧘‍♀️" },
     { name: "Hastalık Düzenle", href: "/admin/hastalikEkle", icon: "🧘‍♀️" },
+    { name: "Hizmet Düzenle", href: "/admin/hizmetEkle", icon: "🛍️" },
     { name: "Webinar", href: "/admin/weblogin", icon: "▶️" },
     { name: "Ayarlar", href: "/admin/settings", icon: "⚙️" },
   ];
