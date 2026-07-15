@@ -130,11 +130,11 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(45, 31, 79, 0.25);
-  backdrop-filter: blur(4px);
+  background: rgba(45, 31, 79, 0.35);
+  backdrop-filter: blur(8px); /* Bulanıklık derinleştirildi */
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   z-index: 1998;
 }
 
@@ -147,17 +147,17 @@
 .mobileDrawer {
   position: fixed;
   top: 0;
-  right: -320px;
-  width: 300px;
+  right: -260px; /* Genişliğe göre gizleme pozisyonu güncellendi */
+  width: 240px; /* Genişlik 300px'den 240px'e daraltıldı */
   height: 100vh;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(25px);
-  box-shadow: -10px 0 35px rgba(45, 31, 79, 0.15);
+  background: rgba(255, 255, 255, 0.72); /* Daha şeffaf cam efekti */
+  backdrop-filter: blur(30px); /* Bulanıklık etkisi artırıldı */
+  box-shadow: -10px 0 40px rgba(45, 31, 79, 0.12);
   z-index: 1999;
-  transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  padding: 60px 15px 30px 15px; /* Üst ve yan dolgular ekstra sıkılaştırıldı */
+  transition: right 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 70px 15px 30px 15px; /* Üst dolgu dengelendi */
   overflow-y: auto;
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.4); /* Aydınlık cam kenar çizgisi */
 }
 
 .drawerOpen {
@@ -167,26 +167,28 @@
 .mobileNav {
   display: flex;
   flex-direction: column;
-  gap: 5px; /* Dikey aralık 10px'den 5px'e düşürüldü */
+  gap: 5px;
 }
 
 .mobileNav a {
   text-decoration: none;
-  font-size: 0.95rem; /* Yazı boyutu 1.05rem'den 0.95rem'e düşürüldü */
+  font-size: 0.95rem;
   font-weight: 600;
   color: #2d1f4f;
-  padding: 6px 12px; /* Link dolgusu 8px-16px'den 6px-12px'e düşürüldü */
-  border-radius: 10px;
-  transition: all 0.3s ease;
+  padding: 6px 12px 6px 15px; /* Sol dolgu çizgi için açıldı */
+  border-radius: 8px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   background: transparent;
-  border: 1px solid transparent;
+  border-left: 3px solid transparent; /* Sol kenar çizgisi başlangıcı */
+  display: flex;
+  align-items: center;
 }
 
 .mobileNav a:hover {
-  background: rgba(123, 78, 255, 0.08);
-  border-color: rgba(123, 78, 255, 0.15);
+  background: linear-gradient(90deg, rgba(123, 78, 255, 0.08) 0%, rgba(255, 110, 199, 0.02) 100%);
   color: #7b4eff;
-  transform: translateX(5px);
+  border-left-color: #7b4eff; /* Hover'da parlayan sol çizgi */
+  transform: translateX(4px); /* Yumuşak sağa kayma efekti */
 }
 
 /* --- Responsive Kurallar --- */
