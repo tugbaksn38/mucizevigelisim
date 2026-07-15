@@ -722,9 +722,14 @@ body {
 
 /* Mobil uyumlu düzenleme */
 @media (max-width: 768px) {
+  .footer {
+    padding: 20px 15px;
+  }
+
   .footer-content {
     grid-template-columns: 1fr; /* tek kolon mobilde */
     text-align: center;
+    gap: 15px;
   }
 
   .footer-col {
@@ -732,8 +737,9 @@ body {
   }
 
   .footer-col ul {
-    grid-template-columns: 1fr; /* mobilde tek sütun */
-    gap: 8px 0;
+    grid-template-columns: repeat(2, minmax(0, max-content)); /* mobilde çift sütun */
+    gap: 8px 20px;
+    justify-content: center;
   }
 
   .social-icons {
