@@ -25,8 +25,6 @@ const nextConfig = {
 
   transpilePackages: [
     "@tensorflow/tfjs",
-    "@tensorflow-models/pose-detection",
-    "@mediapipe/pose",
     "@tensorflow/tfjs-backend-webgl",
     "@tensorflow/tfjs-converter",
   ],
