@@ -5,7 +5,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { getHastaliklar, baslangicHastaliklar, addBaslangicHastaliklar, resetHastaliklar } from "@/utils/hastalik";
+import { getHastaliklar, baslangicHastaliklar, addBaslangicHastaliklar, resetHastaliklar } from "@/data/hastalik";
 
 export default function HastalikEkle() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
