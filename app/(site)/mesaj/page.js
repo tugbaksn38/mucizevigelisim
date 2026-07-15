@@ -41,14 +41,14 @@ export default function MesajPage() {
   return (
     <>
       <Header />
-      
+
       <ClientAutoTranslate>
         <div className={styles.mesajSayfaContainer}>
           <header className={styles.mesajHeader}>
             <h1>Hayata Yol Gösteren Ayetler</h1>
             <p>Kartlara tıklayarak ilham verici mesajları keşfedin</p>
           </header>
-          
+
           <main className={styles.mesajMain}>
             {yukleniyor ? (
               <div className={styles.yukleniyor}>
@@ -57,25 +57,21 @@ export default function MesajPage() {
             ) : (
               <div className={styles.gununMesajiKartlarContainer}>
                 {mesajlar.map((mesaj, index) => (
-                  <GununMesajiCard 
-                    key={mesaj.id} 
+                  <GununMesajiCard
+                    key={mesaj.id}
                     mesaj={mesaj}
-                    index={index + 1} 
+                    index={index + 1}
                   />
                 ))}
               </div>
             )}
           </main>
-          
+
           <footer className={styles.mesajFooter}>
             <p>Her kartın arkasında hayatınıza ışık tutacak bir mesaj bulacaksınız</p>
           </footer>
         </div>
       </ClientAutoTranslate>
-
-      <div className="lang-switcher-container">
-        <LanguageSwitcher />
-      </div>
 
       <Footer />
     </>

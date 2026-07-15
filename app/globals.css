@@ -369,7 +369,6 @@ body {
   max-width: 1500px;
   margin: 0 auto;
   padding: 0 1rem;
-   max-height: 2000px;
 }
 .hero-section {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
